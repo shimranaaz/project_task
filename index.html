@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in registration form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-image: url(Dubai\ night\ city.jpg);
+            background-size: 100% 740px;
+        }
+        h2{
+            color: white;
+            margin: 35px;
+            background-color: rgb(12, 11, 11);
+            width: 105%;
+            padding: 8px;
+            padding-left: 30px;
+            margin: 15px;
+            margin-top: 3px;
+            margin-left: 2px;
+            border: none;
+            text-align: justify;
+            font-family: 'pop',Arial, Helvetica, sans-serif;
+            font-style: bold;
+        }
+        p{
+            margin: 35px;
+            text-align: justify;
+            font-family: 'pop',Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            line-height: 1.500;
+            font-style: normal;
+            color: white;
+        }
+        .container{
+            width: 380px;
+            height: 535px;
+            background-color: rgb(12, 11, 11);
+            margin-left: 60%;
+            margin-top: -7%;
+            margin-right: 0px;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            text-align: center;
+            color: white;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 50%;
+            margin-bottom: -2px;
+            font-style: normal;
+            font-size: 25px;
+            color: white;
+            font-weight: 500;
+            line-height: 2.5;
+        }
+        .inp1{
+            border: none;
+            background-color: rgb(12, 11, 11);
+            border-bottom: 2px solid rgb(26, 22, 22);
+            width: 260px;
+            margin-right: -8px;
+            font-size: 14px;
+            margin-top: 20px;
+            color: white;
+        }
+        .inp2{
+            border: none;
+            width: 260px;
+            font-size: 14px;
+            background-color: rgb(12, 11, 11);
+            border-bottom: 2px solid rgb(26, 22, 22);
+            margin-right: -8px;
+            margin-top: 39px;
+            margin-bottom: 10px;
+            color: white;
+        }
+        button{
+            width: 280px;
+            padding: 8px;
+            font-size: 15px;
+            margin: 10px 0px;
+            cursor: pointer;
+            background-image: linear-gradient( to right,#aa076b,#580f77);
+            color: white;
+            border: none;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+        } 
+        .username{
+            margin-top: -6%;
+            padding-left: 24px;
+        }
+        span{
+            color: rgb(150, 112, 144);
+            margin-top: 20px;
+            padding-left: 10px;
+            font-size: 18px;
+            font-family: 'pop',Arial, Helvetica, sans-serif;
+        }
+        .fa-eye-slash{
+            position: relative;
+            left: -1%;
+            right: 8px;
+            cursor: pointer;
+            top: 0px;
+            transform: translate(-50%);
+        }
+        .fa-envelope{
+            position: relative;
+            left: -1%;
+            right: 8px;
+            cursor: pointer;
+            top: 0px;
+            transform: translate(-50%);
+        }
+        h4{
+            color: rgb(44, 42, 42);
+        }
+        p{
+           color: white;
+        }
+        .Apple-btn{
+            text-decoration: none;
+            padding: 8px;
+            font-size: 15px;
+            margin: 10px 0px;
+            padding-left: 68px;
+            padding-right: 68px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border: none;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+        } 
+        .Facebook-btn{
+            text-decoration: none;
+            padding: 8px;
+            font-size: 15px;
+            margin: 10px 0px;
+            padding-left: 55px;
+            padding-right: 55px;
+            background-color: rgb(44, 44, 163);
+            color: white;
+            border: none;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .Google-btn{
+            text-decoration: none;
+            padding: 8px;
+            margin: 10px 0px;
+            padding-left: 60px;
+            padding-right: 60px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 15px;
+            margin: 10px 0px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .login-link{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>OURSTOCK</h2>
+    <p>Sign up in one step and <br>
+       Start earning money today</p>
+       </div>
+       <div class="container">
+        <form class="Sign in-form">
+         <h3 class="head">Sign in</h3>
+         <div class="username">
+         <p>New user?<span>Create an account</span></p>
+         </div>
+         <div class="Email">
+            <input class="inp1" type="text" placeholder="Email"/>
+            <i class="fa-regular fa-envelope"></i>
+         </div>
+         <div class="Password">
+            <input class="inp2" type="Password" placeholder="Password"/>
+            <i class="fa-solid fa-eye-slash"></i>
+         </div>
+         <br>
+         <button type="Sign in" class="Sign in-btn">Sign in</button>
+         <br><br>
+         <h4 class="Or">-------------------------Or------------------------</h4>
+         <br> 
+         <a href="http://www.apple.com" class="Apple-btn"><i class="fa-brands fa-apple"></i>&nbsp;&nbsp;Continue with Apple</a>
+         <br>
+         <br>
+         <br>
+         <a href="http://Facebook.com" class="Facebook-btn"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Continue with Facebook</a>
+         <br>
+         <br>
+         <br>
+         <a href="http://www.google.com" class="Google-btn"><i class="fa-brands fa-google"></i>&nbsp;&nbsp;Continue with Google</a>
+         <br>
+         <br>
+             <a href="login-page.html" class="login-link">Already have an account?&nbsp;login here!</a>
+         </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
